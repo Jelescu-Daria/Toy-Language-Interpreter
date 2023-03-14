@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="421.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.a7.ProgramListController">
+    <ListView fx:id="programList" layoutX="35.0" layoutY="88.0" prefHeight="283.0" prefWidth="352.0" />
+    <Button fx:id="executeButton" layoutX="153.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleExecuteButton" prefHeight="25.0" prefWidth="115.0" text="Execute" />
+</AnchorPane>

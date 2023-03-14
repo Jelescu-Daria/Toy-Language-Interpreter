@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="511.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.a7.ProgramController">
+   <children>
+      <TextField fx:id="noOfProgramStates" editable="false" layoutX="183.0" layoutY="35.0" prefHeight="25.0" prefWidth="64.0" />
+      <Label layoutX="49.0" layoutY="39.0" text="No of program states" textFill="#168d91">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="heapTable" layoutX="49.0" layoutY="102.0" prefHeight="136.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="heapTableAddressCol" minWidth="9.33333683013916" prefWidth="94.3333330154419" text="Address" />
+          <TableColumn fx:id="heapTableValueCol" prefWidth="105.66666412353516" text="Value" />
+        </columns>
+      </TableView>
+      <Label layoutX="49.0" layoutY="77.0" prefHeight="25.0" prefWidth="97.0" text="Heap table" textFill="#168d91">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ListView fx:id="output" layoutX="307.0" layoutY="102.0" prefHeight="136.0" prefWidth="200.0" />
+      <Label layoutX="307.0" layoutY="77.0" prefHeight="25.0" prefWidth="64.0" text="Output" textFill="#168d91">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ListView fx:id="fileTable" layoutX="575.0" layoutY="102.0" prefHeight="136.0" prefWidth="200.0" />
+      <Label layoutX="575.0" layoutY="77.0" prefHeight="25.0" prefWidth="64.0" text="File table" textFill="#168d91">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ListView fx:id="programStatesIDs" layoutX="49.0" layoutY="336.0" onMouseClicked="#populate" prefHeight="111.0" prefWidth="200.0" />
+      <Label layoutX="49.0" layoutY="310.0" prefHeight="25.0" prefWidth="121.0" text="Program states IDs" textFill="#168d91">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="196.0" layoutX="307.0" layoutY="281.0" opacity="0.28" stroke="#188f8ff2" strokeType="INSIDE" width="467.0" />
+      <Label layoutX="449.0" layoutY="281.0" prefHeight="25.0" prefWidth="184.0" text="For the selected program state" textFill="#168d91">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Line endX="161.0" endY="108.66665649414062" layoutX="145.0" layoutY="283.0" startX="103.0" startY="108.66665649414062" stroke="#188f8f5d" />
+      <TableView fx:id="symTable" layoutX="327.0" layoutY="339.0" prefHeight="111.0" prefWidth="184.0">
+        <columns>
+          <TableColumn fx:id="symTableVarNameCol" prefWidth="90.99996948242188" text="Variable name" />
+          <TableColumn fx:id="symTableVarValueCol" prefWidth="93.66668701171875" text="Value" />
+        </columns>
+      </TableView>
+      <ListView fx:id="exeStack" layoutX="557.0" layoutY="339.0" prefHeight="111.0" prefWidth="200.0" />
+      <Label layoutX="327.0" layoutY="313.0" prefHeight="25.0" prefWidth="97.0" text="Symbol table" textFill="#168d91">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="557.0" layoutY="313.0" prefHeight="25.0" prefWidth="88.0" text="Execution stack" textFill="#168d91">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="oneStepButton" layoutX="653.0" layoutY="35.0" mnemonicParsing="false" onAction="#oneStepButtonHandler" prefHeight="25.0" prefWidth="121.0" text="Run one step" textFill="#168d91">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
