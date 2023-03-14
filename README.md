@@ -35,7 +35,7 @@ Each program state has an ID and its own _Symbol table_ and _Execution stack_.
 <img src="readme_img/prgstate1.png" width="50%"> 
 <img src="readme_img/prgstate2.png" width="50%">
 
-<br> <br> <br>
+<br> <br>
 
 ### Technologies
 
